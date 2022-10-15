@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD PHP</title>
+
+    <!--Estilos css bootstrap-->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!--Estilos css iconos Fontawesome-->
+    <link rel="stylesheet" href="../assets/css/all.min.css">
+
+</head>
+<body>
+   <div class="container">
+        <div class="card">
+             <div class=" card-header bg-info">
+                <h3 class="text-white">Gestionar Departamento</h3>
+             </div>
+                <div class="card-body">
+                <input type="hidden" name="cod_departamento" id="cod_departamento">
+              
+                <div class="row">
+                    <div class="btn-group-sm">
+                          <button class="btn btn-outiline-info" onclick="Consultar();"><span class="fa fa-search"></span> Consultar </button>
+                          <button class="btn btn-outiline-info" onclick="Guardar();"><span class="fa fa-save"></span> Guardar </button>
+                          <button class="btn btn-outiline-info" onclick="Modificar();"><span class="fa fa-pencil-alt"></span> Modificar </button>
+                    </div>
+                </div>  
+
+                 <div class="row">
+                     
+                      <div class="col-md-6">
+                            <label for="nombre departamento">Departamento:</label>
+                            <input type="text" name="Departamento" id="Departamento" class="form-control" autofocus>    
+                      </div>
+
+                     <div class="col-md-6">
+                        <label for="descripcion">Descripcion:</label>
+                        <input type="text" name="descripcion" id="Descripcion" class="form-control" autofocus>    
+                      </div>
+                 </div>  
+
+             
+             <div class="card-footer">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Departamento</th>
+                                <th>Descripcion</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="datos">
+                        </tbody>
+                    </table>
+             </div>
+        </div>
+   </div>
+</body>
+
+    <!--Javascript-->
+    <script src="../assets/js/all.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+    <script src="../js/Estadocivil.js"></script>
+</html>       
